@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Portfolio Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+  
+
+  <div class="container">
+
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">About</a> 
+        </div>
+      </div>
+        
+      <div> 
+        <a class="mid" href="https://www.instagram.com/thebadguys_are_thebestguys/?hl=nb"><img src="images/instagram.png" width="80"; height="80;" alt="My instagram" title="My Instagram" ></a>
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          HELENE VIKTORIA HELIN
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/cosplay.jpg)"></div>
+
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="" alt="">
+            </div>
+
+            <div class="subtitle"><a class="hover" href="cosplay.html" > Click To See My Cosplay Projects.</a> 
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/art1.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="" alt="">
+            </div>
+
+            <div class="subtitle"> <a class="hover" href="art.html"> Click To See My Art projects.</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/cosplay-art.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="" alt="">
+            </div>
+
+            <div class="subtitle"><a class="hover" href="cosplayArt.html"> Click To Se My CosplayArt Projects. </a></div>
+          </div>
+        </div>
+
+        
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>
+
+<a href=""></a>

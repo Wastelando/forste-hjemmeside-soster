@@ -1,0 +1,113 @@
+ body {
+    font-family: "Lato", sans-serif;
+    margin: 0px;
+    background: url(images/about-Background.jpg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+
+     
+      
+  }
+
+  
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+  }
+.nav-wrapper {
+    display: inline-flex;
+    justify-content:   space-between;
+    padding: 38px;
+    flex-basis: content;
+    background-color: rgba(211, 211, 211, 0.274);
+    
+    
+  }
+
+.nav-wrapper .mid {
+   padding-left: 95px;   
+
+      
+  }
+  
+.left-side {
+    display: flex;
+  }
+  
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+  }
+  
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 4px solid transparent;
+    transition: border-bottom 0.5s;
+  }
+  
+.active-nav-link {
+    
+    border-bottom: 4px solid transparent;
+    transition: border-bottom 0.5s;
+  }
+  
+.active-nav-link a {
+    color: black !important;
+  }
+  
+.nav-link-wrapper a {
+    color:black;
+    text-decoration: none;
+    transition: color 0.5s;
+    font-weight: bold;
+  }
+  
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+    font-stretch: wider;
+  }
+  
+.nav-link-wrapper a:hover {
+    color: black;
+  }
+
+
+.profilbilde {
+    opacity: 0.8;
+   width: 300px;
+   height: 250px;
+   display: block;
+   border-radius: 50% !important;
+   overflow: hidden;
+   margin: auto;
+   margin-top: 60px;
+}
+
+.profilbilde:hover {
+    opacity: 1;
+    transition: 1s;
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+}
+
+.bio {
+    display: block;
+    width: 250px;
+    height: fit-content;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    margin-top: 55px;
+    background-color: rgba(119, 136, 153, 0.452);
+    
+    color: whitesmoke;
+
+
+
+}
